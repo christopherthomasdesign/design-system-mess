@@ -1,0 +1,28 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Design System stuff
+      </h1>{{releaseVersion | log }}
+
+      <h2 class="govuk-heading-m">
+        Hover states
+      </h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li><a href="hover-states-1">Removing underlines</a></li>
+        <li><a href="hover-states-2">Grey highlight</a></li>
+      </ul>
+
+    </div>
+</div>
+
+{% endblock %}

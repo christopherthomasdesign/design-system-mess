@@ -1,0 +1,88 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+@import "components/interruption-card";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+.link-no-underline {
+  text-decoration: none;
+}
+
+.link-no-underline:hover {
+  text-decoration: underline;
+  color: $govuk-link-colour;
+}
+
+.hover-states-1 {
+
+  .govuk-link:hover,
+  .govuk-breadcrumbs__link:hover,
+  .govuk-tabs__tab:hover, {
+    text-decoration: none;
+  }
+
+  .govuk-link:hover {
+    color: $govuk-link-colour;
+  }
+
+  .govuk-link:active,
+  .govuk-link:focus {
+    color: $govuk-text-colour;
+  }
+
+  .govuk-back-link:hover {
+    border-bottom: 1px solid rgba(0,0,0,0);
+  }
+
+  .govuk-details__summary:hover {   
+    .govuk-details__summary-text {
+      text-decoration: none;
+    }
+  }
+
+  .govuk-error-summary__list{
+    a:hover {
+      text-decoration: none;
+    }
+  }
+
+}
+
+.hover-states-2 {
+
+  a:hover,
+  .govuk-details__summary:hover {
+    outline: 3px solid transparent;
+    color: #0b0c0c;
+    background-color: govuk-colour("light-grey");
+    -webkit-box-shadow: 0 -2px govuk-colour("light-grey"), 0 4px $govuk-border-colour;
+    box-shadow: 0 -2px govuk-colour("light-grey"), 0 4px $govuk-border-colour;
+    text-decoration: none;
+
+    .govuk-details__summary-text {
+      text-decoration: none;
+    }
+
+  }
+
+  .govuk-back-link:hover {
+    border-bottom: 1px solid rgba(0,0,0,0);
+  }
+
+}
