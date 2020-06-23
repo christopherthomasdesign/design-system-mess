@@ -1,0 +1,71 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Hover states – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+{% from "govuk/components/date-input/macro.njk" import govukDateInput %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+
+      <div class="hover-states-1">
+
+        <span class="govuk-caption-l">Hint text</span>
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
+          Different hint text greys
+        </h1>
+
+        <div class="govuk-!-margin-bottom-7">
+          <p>
+            All greys pass AAA contast
+          </p>
+        </div>
+
+        <div class="govuk-!-margin-bottom-7">
+          <h2 class="govuk-body-s hint-text-grey-1">
+            #55595B
+          </h2>
+
+          {{ govukDateInput({
+            id: "passport-issued",
+            namePrefix: "passport-issued",
+            fieldset: {
+              legend: {
+                text: "When was your passport issued?"
+              }
+            },
+            hint: {
+              text: "For example, 12 11 2007",
+              classes: "hint-text-grey-1"
+            }
+          }) }}
+        </div>
+
+        <div class="govuk-!-margin-bottom-7">
+          <h2 class="govuk-body-s hint-text-grey-1">
+            #595959
+          </h2>
+
+          {{ govukDateInput({
+            id: "passport-issued",
+            namePrefix: "passport-issued",
+            fieldset: {
+              legend: {
+                text: "When was your passport issued?"
+              }
+            },
+            hint: {
+              text: "For example, 12 11 2007",
+              classes: "hint-text-grey-2"
+            }
+          }) }}
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

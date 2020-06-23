@@ -1,0 +1,25 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Hover states – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+
+      <div class="error-focus-2">
+
+        <span class="govuk-caption-l">Error focus states</span>
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
+          4px error outline with 6px focus highlight
+        </h1>
+
+        {% include "includes/error-focus-states-examples.html" %}
+
+    </div>
+</div>
+
+{% endblock %}

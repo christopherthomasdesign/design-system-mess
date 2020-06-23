@@ -1,0 +1,59 @@
+.error-focus-1 {
+
+  .govuk-input--error:not(:focus),
+  .govuk-textarea--error:not(:focus) {
+    border: 2px solid $govuk-error-colour;
+  }
+
+  .govuk-file-upload--error {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+}
+
+.error-focus-2 {
+
+  .govuk-input--error:focus,
+  .govuk-textarea--error:focus {
+    border: 6px solid $govuk-text-colour;
+  }
+
+  .govuk-file-upload--error {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+}
+
+.error-focus-3 {
+
+  .govuk-input--error:focus,
+  .govuk-textarea--error:focus {
+    border: 6px solid $govuk-error-colour;
+  }
+
+  .govuk-file-upload--error {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+}
+
+.error-focus-4 {
+
+  .govuk-input--error:not(:focus),
+  .govuk-textarea--error:not(:focus) {
+    border: 6px solid $govuk-error-colour;
+  }
+
+  .govuk-file-upload--error {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+}

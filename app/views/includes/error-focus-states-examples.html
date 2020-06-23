@@ -1,0 +1,147 @@
+{% from "govuk/components/date-input/macro.njk" import govukDateInput %}
+{% from "govuk/components/file-upload/macro.njk" import govukFileUpload %}
+{% from "govuk/components/input/macro.njk" import govukInput %}
+{% from "govuk/components/textarea/macro.njk" import govukTextarea %}
+
+
+<div class="govuk-!-margin-bottom-9">
+
+  {{ govukInput({
+    label: {
+      text: "Event name"
+    },
+    id: "event-name",
+    name: "event-name",
+    hint: {
+      text: "The name you’ll use on promotional material."
+    },
+    errorMessage: {
+      text: "Enter an event name"
+    }
+  }) }}
+
+</div>
+
+<div class="govuk-!-margin-bottom-9">
+
+  {{ govukTextarea({
+    name: "more-detail",
+    id: "more-detail",
+    label: {
+      text: "Can you provide more detail?"
+    },
+    hint: {
+      text: "Do not include personal or financial information, like your National Insurance number or credit card details."
+    },
+    errorMessage: {
+      text: "Enter more detail"
+    }
+  }) }}
+
+</div>
+
+<div class="govuk-!-margin-bottom-9">
+
+  {{ govukDateInput({
+    fieldset: {
+      legend: {
+        text: "When was your passport issued?"
+      }
+    },
+    hint: {
+      text: "For example, 12 11 2007"
+    },
+    errorMessage: {
+      text: "The date your passport was issued must be in the past"
+    },
+    id: "passport-issued",
+    namePrefix: "passport-issued",
+    items: [
+      {
+        classes: "govuk-input--width-2 govuk-input--error",
+        name: "day",
+        value: "6"
+      },
+      {
+        classes: "govuk-input--width-2 govuk-input--error",
+        name: "month",
+        value: "3"
+      },
+      {
+        classes: "govuk-input--width-4 govuk-input--error",
+        name: "year",
+        value: "2076"
+      }
+    ]
+  }) }}
+</div>
+
+<div class="govuk-!-margin-bottom-9">
+
+  {{ govukDateInput({
+    id: "passport-issued",
+    namePrefix: "passport-issued",
+    fieldset: {
+      legend: {
+        text: "When was your passport issued?"
+      }
+    },
+    hint: {
+      text: "For example, 27 3 2007"
+    },
+    errorMessage: {
+      text: "The date your passport was issued must include a year"
+    },
+    items: [
+      {
+        classes: "govuk-input--width-2",
+        name: "day",
+        value: "6"
+      },
+      {
+        classes: "govuk-input--width-2",
+        name: "month",
+        value: "3"
+      },
+      {
+        classes: "govuk-input--width-4 govuk-input--error",
+        name: "year"
+      }
+    ]
+  }) }}
+
+</div>
+
+<div class="govuk-!-margin-bottom-9">
+
+  {{ govukInput({
+    label: {
+      text: "National Insurance number"
+    },
+    hint: {
+      text: "It’s on your National Insurance card, benefit letter, payslip or P60. For example, ‘QQ 12 34 56 C’."
+    },
+    id: "national-insurance-number",
+    name: "national-insurance-number",
+    errorMessage: {
+      text: "Enter a National Insurance number in the correct format"
+    }
+  }) }}
+
+</div>
+
+<div class="govuk-!-margin-bottom-9">
+
+  {{ govukFileUpload({
+    id: "file-upload-1",
+    name: "file-upload-1",
+    label: {
+      text: "Upload a file"
+    },
+    errorMessage: {
+      text: "The CSV must be smaller than 2MB"
+    }
+  }) }}
+</div>
+
+

@@ -20,6 +20,8 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Styles that aren't in Frontend
 
+@import "styles/error-focus-states";
 @import "styles/hover-states";
+@import "styles/hint-text";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
