@@ -1,14 +1,14 @@
+.govuk-file-upload--error {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .error-focus-1 {
 
   .govuk-input--error:not(:focus),
   .govuk-textarea--error:not(:focus) {
     border: 2px solid $govuk-error-colour;
-  }
-
-  .govuk-file-upload--error {
-    margin: 0;
-    padding: 0;
-    border: 0;
   }
 
 }
@@ -17,13 +17,7 @@
 
   .govuk-input--error:focus,
   .govuk-textarea--error:focus {
-    border: 6px solid $govuk-text-colour;
-  }
-
-  .govuk-file-upload--error {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    border: 2px solid $govuk-text-colour;
   }
 
 }
@@ -32,28 +26,25 @@
 
   .govuk-input--error:focus,
   .govuk-textarea--error:focus {
-    border: 6px solid $govuk-error-colour;
-  }
-
-  .govuk-file-upload--error {
-    margin: 0;
-    padding: 0;
-    border: 0;
+    border: 6px solid $govuk-text-colour;
   }
 
 }
 
 .error-focus-4 {
 
-  .govuk-input--error:not(:focus),
-  .govuk-textarea--error:not(:focus) {
+  .govuk-input--error:focus,
+  .govuk-textarea--error:focus {
     border: 6px solid $govuk-error-colour;
   }
 
-  .govuk-file-upload--error {
-    margin: 0;
-    padding: 0;
-    border: 0;
+}
+
+.error-focus-5 {
+
+  .govuk-input--error:not(:focus),
+  .govuk-textarea--error:not(:focus) {
+    border: 6px solid $govuk-error-colour;
   }
 
 }
