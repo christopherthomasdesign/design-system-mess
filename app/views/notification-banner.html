@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Notification banner – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <span class="govuk-caption-l">Notification banner</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
+    Example banners
+  </h1>
+
+  <p>Standard banner:</p>
+
+  <div class="govuk-notification-banner" aria-labelledby="notification-banner-title" role="region">
+    <h2 class="govuk-notification-banner__title" id="notification-banner-title">
+      You have 9 days to send a response. <a class="govuk-link" href="#respond-to-application">Respond to application</a>.
+    </h2>
+  </div>
+
+  <p>Standard banner with additional text:</p>
+
+  <div class="govuk-notification-banner" aria-labelledby="notification-banner-title" role="region">
+    <h2 class="govuk-notification-banner__title" id="notification-banner-title">
+      This publication was withdrawn on 7 March 2014
+    </h2>
+    <div class="govuk-notification-banner__body">
+      <p>
+        Archived and replaced by the <a class="govuk-link" href="#">new planning practice guidance</a> launched 6 March 2014 on an external website.
+      </p>
+    </div>
+  </div>
+
+  <p>Success banner</p>
+
+  <div class="govuk-notification-banner govuk-notification-banner--success" aria-labelledby="notification-banner-title" role="alert" tabindex="-1" data-module="initial-focus">
+    <h2 class="govuk-notification-banner__title" id="notification-banner-title">
+      Invite sent to example@email.com
+    </h2>
+  </div>
+
+  <p>Error banner:</p>
+
+  <div class="govuk-notification-banner govuk-notification-banner--error" aria-labelledby="notification-banner-title" role="alert" tabindex="-1" data-module="initial-focus">
+    <h2 class="govuk-notification-banner__title" id="notification-banner-title">
+      The verification code you entered is incorrect or has expired. Try again or <a href="#">resend the message</a>.
+    </h2>
+  </div>
+
+{% endblock %}

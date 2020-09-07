@@ -44,7 +44,7 @@
 
 .hover-states-2 {
 
-  a:hover,
+  a:not(:focus):hover,
   .govuk-details__summary:hover {
     outline: 3px solid transparent;
     color: #0b0c0c;
@@ -59,7 +59,7 @@
 
   }
 
-  .govuk-back-link:hover {
+  .govuk-back-link:not(:focus):hover {
     border-bottom: 1px solid rgba(0,0,0,0);
   }
 

@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/radios/macro.njk" import govukRadios %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "index"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-notification-banner" role="region">
+        
+        <h2 class="govuk-notification-banner__title" id="notification-banner-title">
+          You must cancel your lost or stolen passport before you apply for a replacement
+        </h2>
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">    
+        <h2 class="govuk-notification-banner__title" id="notification-banner-title">
+          Because of coronavirus (COVID-19), it currently takes longer to renew or replace a passport online
+        </h2>
+        <div class="govuk-notification-banner__body">
+          <p>
+            It may take longer for a first adult passport.
+          </p>
+          <p>
+            You may be able to <a href="#">get a passport urgently</a> to travel for compassionate reasons or work, or to prove your identity.
+          </p>
+        </div>
+      </div>
+
+      <form action="passport-7" method="post" novalidate>
+
+        {{ govukRadios({
+          idPrefix: "passport-cancelled",
+          name: "passport-cancelled",
+          fieldset: {
+            legend: {
+              text: "Have you cancelled your passport with HM Passport Office?",
+              isPageHeading: true,
+              classes: "govuk-fieldset__legend--l"
+            }
+          },
+          items: [
+            {
+              value: "yes",
+              text: "Yes - I’ve cancelled it"
+            },
+            {
+              value: "no",
+              text: "No - I need to cancel it now"
+            }
+          ]
+        }) }}
+
+        {{ govukButton({
+          text: "Continue"
+        }) }}
+      </form>
+    </div>
+  </div>
+{% endblock %}
