@@ -22,6 +22,15 @@
   max-width: 600px;
 }
 
+.govuk-notification-banner__prefix {
+  padding-right: 5px;
+}
+
+.govuk-notification-banner__prefix.govuk-notification-banner__title {
+  padding-right: 0px;
+  display: block;
+}
+
 .govuk-notification-banner__body {
   @include govuk-font($size: 19);
   max-width: 600px;
