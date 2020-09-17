@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Notification banner – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="/" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <span class="govuk-caption-l">Notification banner</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
+    Example banners with content prefixes
+  </h1>
+
+  <p>Standard banner:</p>
+
+  <div class="govuk-notification-banner" aria-labelledby="notification-banner-title" role="region">
+  	<div class="govuk-notification-banner-notice__header">
+  		<h2 class="govuk-notification-banner-notice__title">Important</h2>
+  	</div>
+  	<div class="govuk-notification-banner__body">
+  		<p>You have 9 days to send a response. <a class="govuk-link" href="#respond-to-application">Respond to application</a>.</p>
+  	</div>
+  </div>
+
+{% endblock %}

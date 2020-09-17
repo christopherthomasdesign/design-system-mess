@@ -1,25 +1,31 @@
 .govuk-notification-banner {
   margin-bottom: 50px;
-  padding: 15px 15px 0;
   border: 5px solid govuk-colour("blue");
   font-family: $govuk-font-family;
 
   &:focus {
     outline: 4px solid $govuk-focus-colour;
   }
+}
+
+  
+
+.govuk-notification-banner-notice__header {
+  background-color: govuk-colour("blue");
+  padding: 5px 15px;
 
   @include govuk-media-query($from: tablet) {
-    padding: 20px 20px 0;
+    padding: 10px 20px;
   }
 
 }
 
-.govuk-notification-banner__title {
+.govuk-notification-banner-notice__title {
   @include govuk-font($size: 24);
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0px;
   font-weight: 700;
   max-width: 600px;
+  color: #fff;
 }
 
 .govuk-notification-banner__prefix {
@@ -34,6 +40,7 @@
 .govuk-notification-banner__body {
   @include govuk-font($size: 19);
   max-width: 600px;
+  padding: 20px 0px 0px 20px;
 
   p {
     margin-top: 0;
