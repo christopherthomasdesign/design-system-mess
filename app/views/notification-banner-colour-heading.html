@@ -12,18 +12,95 @@
 
   <span class="govuk-caption-l">Notification banner</span>
   <h1 class="govuk-heading-l govuk-!-margin-bottom-9">
-    Example banners with content prefixes
+    Example banners with coloured label / heading
   </h1>
 
-  <p>Standard banner:</p>
+  {# this is a wrapper so I can style things for the new banner design without touching previous designs #}
+  <div class="notification-banner-colour">
 
-  <div class="govuk-notification-banner colour-heading" aria-labelledby="notification-banner-title" role="region">
-  	<div class="govuk-notification-banner-notice__header">
-  		<h2 class="govuk-notification-banner-notice__title" id="notification-banner-title">Important</h2>
-  	</div>
-  	<div class="govuk-notification-banner__content">
-  		<p>You have 9 days to send a response. <a class="govuk-link" href="#respond-to-application">Respond to application</a>.</p>
-  	</div>
+    <p>
+      Information banner with link:
+    </p>
+
+    <div class="govuk-notification-banner" aria-labelledby="notification-banner-title" role="region">
+      <h2 class="govuk-notification-banner__title" id="notification-banner-title">Important</h2>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-!-font-size-24 govuk-!-font-weight-bold">You have 9 days to send a response. <a class="govuk-link" href="#respond-to-application">Respond to application</a>.</p>
+      </div>
+    </div>
+
+    <p>
+      Information banner with heading and paragraph:
+    </p>
+
+    <div class="govuk-notification-banner" aria-labelledby="notification-banner-title" role="region">
+      <h2 class="govuk-notification-banner__title" id="notification-banner-title">Important</h2>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-heading-m">
+          This publication was withdrawn on 7 March 2014
+        </h3>
+        <p>Archived and replaced by the <a href="#">new planning guidance</a> launched 6 March 2014 on an external website</p>
+      </div>
+    </div>
+
+    <p>
+      Information banners merged:
+    </p>
+
+    <div class="govuk-notification-banner" aria-labelledby="notification-banner-title" role="region">
+      <h2 class="govuk-notification-banner__title" id="notification-banner-title">Important</h2>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-heading-m">
+          This publication was withdrawn on 7 March 2014
+        </h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>Archived and replaced by the <a href="#">new planning guidance</a> launched 6 March 2014 on an external website</li>
+          <li>The was published under the 2005 to 2010 Labour government</li>
+      </div>
+    </div>
+
+    <p>
+      Success banner:
+    </p>
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" tabindex="-1">
+      <h2 class="govuk-notification-banner__title govuk-notification-banner__title--success" id="notification-banner-title">Success</h2>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-!-font-size-24 govuk-!-font-weight-bold">Email sent to example@email.com</p>
+      </div>
+    </div>
+
+    <p>
+      Success banners merged:
+    </p>
+
+    {# https://github.com/alphagov/govuk-design-system-backlog/issues/2#issuecomment-582919170 #}
+
+    <div class="govuk-notification-banner govuk-notification-banner--success" role="alert" tabindex="-1">
+      <h2 class="govuk-notification-banner__title govuk-notification-banner__title--success">Success</h2>
+      <div class="govuk-notification-banner__content">
+        <h3 class="govuk-heading-m">
+          4 files uploaded
+        </h3>
+        <ul class="govuk-list govuk-list--bullet">
+          <li><a href="#">government-strategy.pdf</a></li>
+          <li><a href="#">government-strategy-v2.pdf</a></li>
+          <li><a href="#">government-strategy-v3-FINAL.pdf</a></li>
+          <li><a href="#">government-strategy-v4-FINAL-v2.pdf</a></li>       
+      </div>
+    </div>
+
+    <p>
+      Error banner:
+    </p>
+
+    <div class="govuk-notification-banner govuk-notification-banner--error" role="alert" tabindex="-1">
+      <h2 class="govuk-notification-banner__title govuk-notification-banner__title--error" id="notification-banner-title">Error</h2>
+      <div class="govuk-notification-banner__content">
+        <p class="govuk-!-font-size-24 govuk-!-font-weight-bold">There was a problem uploading your file. Please try again.</p>
+      </div>
+    </div>
+
   </div>
 
 {% endblock %}
