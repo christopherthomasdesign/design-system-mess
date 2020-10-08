@@ -1,0 +1,51 @@
+.links-1 {
+
+  a {
+    border-bottom: 1px solid $govuk-link-colour;
+    text-decoration: none;
+  }
+
+  a:hover:not(:focus) {
+    color: $govuk-link-colour;
+    border-bottom: 3px solid $govuk-link-colour;
+  }
+
+  a:focus {
+    border-bottom: none;
+  }
+
+}
+
+.links-2 {
+
+  a {
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+
+  a:hover:not(:focus) {
+    color: $govuk-link-colour;
+    text-decoration-thickness: 3px;
+  }
+
+}
+
+.links-3 {
+
+  a {
+    background-size: 1px 1em;
+    box-shadow: inset 0 -2px white, inset 0 -3px $govuk-link-colour;
+    text-decoration: none;
+    text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white;  
+  }
+
+  a:hover {
+    color: $govuk-link-colour;
+    box-shadow: inset 0 0px white, inset 0 -3px #1d70b8;
+  }
+  
+}
+
+
+
+
