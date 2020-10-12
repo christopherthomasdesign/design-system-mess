@@ -1,17 +1,12 @@
 .links-1 {
 
   a {
-    border-bottom: 1px solid $govuk-link-colour;
-    text-decoration: none;
+    // chose this non-pallette colour cos i think it needs to have 3:1 contrast
+    text-decoration-color: #939497;
   }
 
-  a:hover:not(:focus) {
-    color: $govuk-link-colour;
-    border-bottom: 3px solid $govuk-link-colour;
-  }
-
-  a:focus {
-    border-bottom: none;
+  a:hover {
+    text-decoration-color: inherit;
   }
 
 }
@@ -33,6 +28,24 @@
 .links-3 {
 
   a {
+    border-bottom: 1px solid $govuk-link-colour;
+    text-decoration: none;
+  }
+
+  a:hover:not(:focus) {
+    color: $govuk-link-colour;
+    border-bottom: 3px solid $govuk-link-colour;
+  }
+
+  a:focus {
+    border-bottom: none;
+  }
+
+}
+
+.links-4 {
+
+  a {
     background-size: 1px 1em;
     box-shadow: inset 0 -2px white, inset 0 -3px $govuk-link-colour;
     text-decoration: none;
@@ -40,12 +53,31 @@
   }
 
   a:hover {
-    color: $govuk-link-colour;
     box-shadow: inset 0 0px white, inset 0 -3px #1d70b8;
+    color: $govuk-link-colour;
+    text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white;
   }
   
 }
 
+.links-5 {
 
+  a {
+    background-image: linear-gradient(to right, $govuk-link-colour 100%, transparent 100%);
+    background-position: 0 1.02em;
+    background-repeat: repeat-x;
+    background-size: 2px 1px;
+    text-decoration: none;
+  }
 
+  a:hover:not(:focus) {
+    background-position: 0 1.06em;
+    background-size: 2px 3px;
+    color: $govuk-link-colour;
+  }
 
+  a:focus {
+    background-image: none;
+  }
+
+}

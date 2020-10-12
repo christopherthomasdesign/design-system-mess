@@ -7,22 +7,117 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <span class="govuk-caption-l">Links</span>
+  <h1 class="govuk-heading-l">
+    Underlines
+  </h1>
+
+  <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
-      <div class="links-0">
-        <p>
-          You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
-        </p>
-      </div>
+      <p>My dream link underlines:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>don't cut through descenders</li>
+        <li>have adjustable line thickness</li>
+        <li>have adjustable distance from the baseline of the text</li>
+        <li>are consistent across browsers</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <h2 class="govuk-heading-s">
+        As-is
+      </h2>
+      <p>
+        You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
+      </p>
     </div>
     <div class="govuk-grid-column-one-third">
       <pre>text-decoration: underline</pre>
     </div>
   </div>
 
-  <div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="grey-panel">
+        <ul class="govuk-list govuk-list--bullet govuk-body-s">
+          <li>Handled very differently by different browsers</li>
+          <li>Underline gets too thick at larger sizes</li>
+        </ul>
+      </div>
+    </div>
+
+  </div> 
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
       <div class="links-1">
+        <h2 class="govuk-heading-s">
+          Text decoration colour
+        </h2>
+        <p>
+          You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
+        </p>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <pre>text-decoration-color: #939497</pre>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="grey-panel">
+        <ul class="govuk-list govuk-list--bullet govuk-body-s">
+          <li>Underline colour needs to have 3:1 contrast against background (I think) so can't be much lighter than the existing blue... so maybe pointless</li>
+          <li>Supported by 95% of users' browsers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="links-2">
+        <h2 class="govuk-heading-s">
+          Text decoration thickness + offset
+        </h2>
+        <p>
+          You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
+        </p>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <pre>text-decoration-thickness: 1px<br>text-underline-offset: 2px</pre>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="grey-panel">
+        <ul class="govuk-list govuk-list--bullet govuk-body-s">
+          <li>Can control line thickness and distance from baseline</li>
+          <li>Not widely supported – both <a href="https://caniuse.com/?search=text-decoration-thickness">text-decoration-thickness</a> and <a href="https://caniuse.com/?search=text-underline-offset">text-underline-offset</a> reach around 17.6% of users</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="links-3">
+        <h2 class="govuk-heading-s">
+          Border bottom
+        </h2>
         <p>
           You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
         </p>
@@ -33,30 +128,71 @@
     </div>
   </div>
 
-  <div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
-      <div class="links-2">
-        <p>
-          You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
-        </p>
+      <div class="grey-panel">
+        <ul class="govuk-list govuk-list--bullet govuk-body-s">
+          <li>Line too far below baseline, and can't change it without messing up the existing line height</li>
+        </ul>
       </div>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <pre>text-decoration-thickness: 1px<br>text-underline-offset: 2px</pre>
-      <p class="govuk-body-s"><a href="https://caniuse.com/?search=text-decoration-thickness">Not widely supported</a></p>
     </div>
   </div>
 
-  <div class="govuk-grid-row govuk-!-margin-bottom-9">
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
-      <div class="links-3">
+      <div class="links-4">
+        <h2 class="govuk-heading-s">
+          Box shadow + text shadow
+        </h2>
         <p>
           You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
         </p>
       </div>
     </div>
     <div class="govuk-grid-column-one-third">
-      <pre>background-size: 1px 1em;<br>box-shadow: inset 0 -2px white, inset 0 -3px $govuk-link-colour;<br>text-decoration: none;<br>text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white;</pre>
+      <pre>background-size: 1px 1em<br>box-shadow: inset 0 -2px white, inset 0 -3px $govuk-link-colour<br>text-decoration: none<br>text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white</pre>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="grey-panel">
+        <ul class="govuk-list govuk-list--bullet govuk-body-s">
+          <li>The text and box shadows need to be set as the colour of the background – so you'd need to adapt it for anything other than a white background</li>
+          <li>Looks weird/buggy when you select some text</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="links-5">
+        <h2 class="govuk-heading-s">
+          Background image + linear gradient
+        </h2>
+        <p>
+          You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
+        </p>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <pre>background-image: linear-gradient(to right, $govuk-link-colour 100%, transparent 100%)<br>background-position: 0 1em<br>background-repeat: repeat-x<br>background-size: 1px 1px<br>text-decoration: none</pre>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds"> 
+      <div class="grey-panel">
+        <ul class="govuk-list govuk-list--bullet govuk-body-s">
+          <li>Doesn't skip descenders</li>
+          <li>Resizes differently across browsers when you zoom</li>
+        </ul>
+      </div>
     </div>
   </div>
 
