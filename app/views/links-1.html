@@ -14,12 +14,13 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
-      <p>My dream link underlines:</p>
+      <p>The link underlines of my dreams would let you:</p>
       <ul class="govuk-list govuk-list--bullet">
-        <li>don't cut through descenders</li>
-        <li>have adjustable line thickness</li>
-        <li>have adjustable distance from the baseline of the text</li>
-        <li>are consistent across browsers</li>
+        <li>change the line thickness</li>
+        <li>change the distance from the baseline of the text</li>
+        <li>(maybe) change the colour</li>
+        <li>skip descenders rather than cut through them (though there is <a href="https://github.com/alphagov/govuk-design-system-backlog/issues/64#issuecomment-417588800">debate</a> on how desirable this is)</li>
+        <li>be consistent across browsers</li>
       </ul>
     </div>
   </div>
@@ -28,54 +29,36 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
-      <h2 class="govuk-heading-s">
+      <h2 class="govuk-heading-m">
         As-is
       </h2>
-      <p>
+      <p class="govuk-!-margin-bottom-8">
         You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
       </p>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <pre>text-decoration: underline</pre>
+      <ul class="govuk-list govuk-list--bullet govuk-body-s">
+        <li>Handled very differently by different browsers</li>
+        <li>Underline gets too thick at larger sizes</li>
+      </ul>
     </div>
   </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds"> 
-      <div class="grey-panel">
-        <ul class="govuk-list govuk-list--bullet govuk-body-s">
-          <li>Handled very differently by different browsers</li>
-          <li>Underline gets too thick at larger sizes</li>
-        </ul>
-      </div>
-    </div>
-
-  </div> 
 
   <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
       <div class="links-1">
-        <h2 class="govuk-heading-s">
+        <h2 class="govuk-heading-m">
           Text decoration colour
         </h2>
-        <p>
+        <p class="govuk-!-margin-bottom-8">
           You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
         </p>
-      </div>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <pre>text-decoration-color: #939497</pre>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds"> 
-      <div class="grey-panel">
+        <pre>text-decoration-color: #939497</pre>
         <ul class="govuk-list govuk-list--bullet govuk-body-s">
-          <li>Underline colour needs to have 3:1 contrast against background (I think) so can't be much lighter than the existing blue... so maybe pointless</li>
-          <li>Supported by 95% of users' browsers</li>
+          <li>Supported by <a href="https://caniuse.com/?search=text-decoration-color">93% of browsers</a></li>
+          <li>Intention is to use a lighter colour than the text to make the line look lighter</li>
+          <li>Underline colour needs to have <a href="https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html">3:1 contrast against background</a> (I think?) so can't be much lighter than the existing blue... so maybe pointless</li>
+          <li>Same issues as above – handled differently by different browsers and goes too thick at larger sizes</li>
         </ul>
       </div>
     </div>
@@ -86,25 +69,16 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
       <div class="links-2">
-        <h2 class="govuk-heading-s">
+        <h2 class="govuk-heading-m">
           Text decoration thickness + offset
         </h2>
-        <p>
+        <p class="govuk-!-margin-bottom-8">
           You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
         </p>
-      </div>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <pre>text-decoration-thickness: 1px<br>text-underline-offset: 2px</pre>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds"> 
-      <div class="grey-panel">
+        <pre>text-decoration-thickness: 1px<br>text-underline-offset: 2px</pre>
         <ul class="govuk-list govuk-list--bullet govuk-body-s">
           <li>Can control line thickness and distance from baseline</li>
-          <li>Not widely supported – both <a href="https://caniuse.com/?search=text-decoration-thickness">text-decoration-thickness</a> and <a href="https://caniuse.com/?search=text-underline-offset">text-underline-offset</a> reach around 17.6% of users</li>
+          <li>Not widely supported – both <a href="https://caniuse.com/?search=text-decoration-thickness">text-decoration-thickness</a> and <a href="https://caniuse.com/?search=text-underline-offset">text-underline-offset</a> reach around 17.6% of users (view in Safari or Firefox to see the effect)</li>
         </ul>
       </div>
     </div>
@@ -115,24 +89,16 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
       <div class="links-3">
-        <h2 class="govuk-heading-s">
+        <h2 class="govuk-heading-m">
           Border bottom
         </h2>
-        <p>
+        <p class="govuk-!-margin-bottom-8">
           You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
         </p>
-      </div>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <pre>border-bottom: 1px solid $govuk-link-colour<br>text-decoration: none</pre>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds"> 
-      <div class="grey-panel">
+        <pre>border-bottom: 1px solid $govuk-link-colour<br>text-decoration: none</pre>
         <ul class="govuk-list govuk-list--bullet govuk-body-s">
-          <li>Line too far below baseline, and can't change it without messing up the existing line height</li>
+          <li>Sits too far below baseline – halfway between the lines of text</li>
+          <li>Can't change the underline postition without messing up the line height</li>
         </ul>
       </div>
     </div>
@@ -143,24 +109,16 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
       <div class="links-4">
-        <h2 class="govuk-heading-s">
+        <h2 class="govuk-heading-m">
           Box shadow + text shadow
         </h2>
-        <p>
+        <p class="govuk-!-margin-bottom-8">
           You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
         </p>
-      </div>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <pre>background-size: 1px 1em<br>box-shadow: inset 0 -2px white, inset 0 -3px $govuk-link-colour<br>text-decoration: none<br>text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white</pre>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds"> 
-      <div class="grey-panel">
+        <pre>background-size: 1px 1em<br>box-shadow: inset 0 -2px #fff, inset 0 -3px $govuk-link-colour;<br>text-decoration: none;<br>text-shadow: -1px -1px #fff, -1px 1px #fff, 1px -1px #fff, 1px 1px #fff;</pre>
         <ul class="govuk-list govuk-list--bullet govuk-body-s">
           <li>The text and box shadows need to be set as the colour of the background – so you'd need to adapt it for anything other than a white background</li>
+          <li>Possible performance issues with box shadow and text shadow?</li>
           <li>Looks weird/buggy when you select some text</li>
         </ul>
       </div>
@@ -172,25 +130,16 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds"> 
       <div class="links-5">
-        <h2 class="govuk-heading-s">
-          Background image + linear gradient
+        <h2 class="govuk-heading-m">
+          Background image + gradient + text shadow
         </h2>
-        <p>
+        <p class="govuk-!-margin-bottom-8">
           You can’t keep a pet pig at your home until you <a href="#?" class="govuk-link govuk-link--no-visited-state">get a county parish holding (CPH) number</a> from the Rural Payments Agency (RPA). You must also tell the <a href="#?" class="govuk-link govuk-link--no-visited-state">Animal and Plant Health Agency (APHA)</a> that you’re keeping pigs, within 30 days of your first pet pig arriving on your land.
         </p>
-      </div>
-    </div>
-    <div class="govuk-grid-column-one-third">
-      <pre>background-image: linear-gradient(to right, $govuk-link-colour 100%, transparent 100%)<br>background-position: 0 1em<br>background-repeat: repeat-x<br>background-size: 1px 1px<br>text-decoration: none</pre>
-    </div>
-  </div>
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds"> 
-      <div class="grey-panel">
+        <pre>background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2.5px, $govuk-link-colour 2.5px, $govuk-link-colour 3.5px, rgba(0, 0, 0, 0) 2px);<br>position: relative;<br>text-decoration: none;<br>text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;</pre>
         <ul class="govuk-list govuk-list--bullet govuk-body-s">
-          <li>Doesn't skip descenders</li>
-          <li>Resizes differently across browsers when you zoom</li>
+          <li>Apparently resizes differently across browsers when you zoom – I haven't been able to prove this</li>
+          <li>Same as text shadow above – white outlines cause issues</li>
         </ul>
       </div>
     </div>

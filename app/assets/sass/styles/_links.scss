@@ -5,9 +5,9 @@
     text-decoration-color: #939497;
   }
 
-  a:hover {
-    text-decoration-color: inherit;
-  }
+  // a:hover {
+  //   text-decoration-color: inherit;
+  // }
 
 }
 
@@ -18,10 +18,10 @@
     text-underline-offset: 2px;
   }
 
-  a:hover:not(:focus) {
-    color: $govuk-link-colour;
-    text-decoration-thickness: 3px;
-  }
+  // a:hover:not(:focus) {
+  //   color: $govuk-link-colour;
+  //   text-decoration-thickness: 3px;
+  // }
 
 }
 
@@ -32,10 +32,10 @@
     text-decoration: none;
   }
 
-  a:hover:not(:focus) {
-    color: $govuk-link-colour;
-    border-bottom: 3px solid $govuk-link-colour;
-  }
+  // a:hover:not(:focus) {
+  //   color: $govuk-link-colour;
+  //   border-bottom: 3px solid $govuk-link-colour;
+  // }
 
   a:focus {
     border-bottom: none;
@@ -47,37 +47,43 @@
 
   a {
     background-size: 1px 1em;
-    box-shadow: inset 0 -2px white, inset 0 -3px $govuk-link-colour;
+    box-shadow: inset 0 -2px #fff, inset 0 -3px $govuk-link-colour;
     text-decoration: none;
-    text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white;  
+    text-shadow: -1px -1px #fff, -1px 1px #fff, 1px -1px #fff, 1px 1px #fff;  
   }
 
-  a:hover {
-    box-shadow: inset 0 0px white, inset 0 -3px #1d70b8;
-    color: $govuk-link-colour;
-    text-shadow: -1px -1px white, -1px 1px white, 1px -1px white, 1px 1px white;
+  // a:hover {
+  //   box-shadow: inset 0 0px #fff, inset 0 -3px$govuk-link-colour;
+  //   color: $govuk-link-colour;
+  //   text-shadow: -1px -1px #fff, -1px 1px #fff, 1px -1px #fff, 1px 1px #fff;
+  // }
+
+  a:focus {
+    background-image: none;
+    text-shadow: none;
   }
   
 }
 
+// Background image + linear gradient + text shadow
 .links-5 {
 
   a {
-    background-image: linear-gradient(to right, $govuk-link-colour 100%, transparent 100%);
-    background-position: 0 1.02em;
-    background-repeat: repeat-x;
-    background-size: 2px 1px;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 2.5px,$govuk-link-colour 2.5px,$govuk-link-colour 3.5px, rgba(0, 0, 0, 0) 2px);
+    position: relative;
     text-decoration: none;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
   }
 
-  a:hover:not(:focus) {
-    background-position: 0 1.06em;
-    background-size: 2px 3px;
-    color: $govuk-link-colour;
-  }
+  // a:hover:not(:focus) {
+  //   background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) -3px,$govuk-link-colour -2px,$govuk-link-colour 3px, rgba(0, 0, 0, 0) 2px);
+  //   color: $govuk-link-colour;
+  //   text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff, 0 1px 0 #fff, -1px 0 0 #fff, 1px 0 0 #fff, 0 2px 0 #fff;
+  // }
 
-  a:focus {
+  a:focus:not {
     background-image: none;
+    text-shadow: none;
   }
 
 }

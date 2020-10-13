@@ -29,13 +29,12 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-.grey-panel {
-  margin: 30px auto;
+pre {
   background-color: govuk-colour("light-grey");
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 30px auto;
+  overflow-x: scroll;
   padding: 15px;
-
-  ul {
-    margin-bottom: 0;
-  }
-  
 }
