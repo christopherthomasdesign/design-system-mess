@@ -1,58 +1,64 @@
-.accordion-changes  {
-
-  .govuk-accordion__section-header,
-  .govuk-accordion__section-content {
-    padding-left: 15px;
-  }
-
-  .govuk-accordion__section-button {
-    font-size: 19px;
-    line-height: 1.4;
-  }
-
-}
-
 .js-enabled {
+
+  .govuk-accordion {
+    border-bottom: none;
+    margin-bottom: 45px;
+  }
 
   .govuk-accordion__controls {
     text-align: left;
 
     button {
-      padding: .5em 0;
-      text-decoration: underline;
+      font-size: 19px;
+      box-sizing: border-box;
+      display: inline-block;
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 8px;
+      padding: 13px 25px 12px;
+      border: 1px solid $govuk-border-colour;
+      border-radius: 0;
+      color: $govuk-text-colour;
+      -webkit-box-shadow: 0 2px 0 $govuk-border-colour;
+      box-shadow: 0 2px 0 $govuk-border-colour;
+      text-align: center;
+      vertical-align: top;
+      cursor: pointer;
+    }
+
+    button:hover:not(:focus){
+      color: inherit;
+      background-color: govuk-colour("light-grey");
     }
 
     button:focus {
-      text-decoration: none;
+      outline: 3px solid transparent;
+      color: #0b0c0c;
+      background-color: #ffdd00;
+      box-shadow: 0 0px #ffdd00, 0 2px #0b0c0c; 
+      border: 1px solid transparent;
     }
   }
 
   .accordion-changes {
 
+    .govuk-accordion__section {
+      margin-bottom: 5px;
+      border-top: 1px solid $govuk-border-colour;
+      border-left: 1px solid $govuk-border-colour;
+      border-right: 1px solid $govuk-border-colour;
+      border-bottom: 3px solid $govuk-border-colour;
+    }
+
     .govuk-accordion__section-header{
-      border-width: 1px 1px 0 1px;
-      border-color: #b1b4b6;
-      border-style: solid;
       color: #0b0c0c;
+      padding: 20px 25px;
+      border-top: 0;
     }
 
 
-    .govuk-accordion__section:hover:not(:focus) {
-      background-color: #f3f2f1;
-
-      // .govuk-accordion__section-header {
-      //   color: $govuk-link-colour;
-      // }
-
-      // .govuk-accordion__icon:after,
-      // .govuk-accordion__icon:before {
-      //   background-color: $govuk-link-colour;
-      // }
-
-      // .govuk-accordion__icon {
-      //   border: 1px solid $govuk-link-colour;
-      // }
-
+    .govuk-accordion__section-header:hover:not(:focus) {
+      background-color: govuk-colour("light-grey");
     }
 
     .govuk-accordion__section-button:hover:not(:focus) {
@@ -67,27 +73,52 @@
       margin-top:8px;
       right: auto;
       top: auto;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
     }
 
-    .govuk-accordion__icon:after,
     .govuk-accordion__icon:before {
-      background-color: $govuk-text-colour;
-      border: 1px solid transparent;
-      width: 5%;
-      height: 50%;
+      background-color: transparent;
     }
 
-    .govuk-accordion__icon:before{
+
+    .govuk-accordion__icon:after {
       width: 50%;
-      height: 5%;
+      height:50%;
+      border-style: solid;
+      border-color: $govuk-text-colour;
+      border-width: 0 2px 2px 0;
+      margin: 3px;
+      background-color: transparent;
     }
 
-    .govuk-accordion__section--expanded .govuk-accordion__section-header, 
-    .govuk-accordion__section--expanded .govuk-accordion__section-content {
-      border-left: 4px solid #0b0c0c;
-      border-right: 1px solid #b1b4b6;
-      padding-left: 12px;
-    }
+    .govuk-accordion__section--expanded {
+      border-left: 4px solid $govuk-text-colour;
+
+      .govuk-accordion__section-header,
+      .govuk-accordion__section-content {
+        padding-left: 22px;
+        padding-right: 25px;
+      }
+
+      .govuk-accordion__icon:before{
+        width: 50%;
+        height: 50%;
+        border-style: solid;
+        border-color: $govuk-text-colour;
+        border-width: 2px 0 0 2px;
+        margin: 5px;
+        background-color: transparent;
+      }
+
+      .govuk-accordion__section-content {
+        padding-bottom: 45px;
+      }
+
+    } 
 
   }
 
