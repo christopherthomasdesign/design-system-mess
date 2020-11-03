@@ -1,44 +1,44 @@
 .js-enabled {
 
-  .govuk-accordion {
-    border-bottom: none;
-    margin-bottom: 45px;
-  }
+  // .govuk-accordion {
+  //   border-bottom: none;
+  //   margin-bottom: 45px;
+  // }
 
-  .govuk-accordion__controls {
-    text-align: left;
+  // .govuk-accordion__controls {
+  //   text-align: left;
 
-    button {
-      font-size: 19px;
-      box-sizing: border-box;
-      display: inline-block;
-      position: relative;
-      margin-top: 0;
-      margin-bottom: 8px;
-      padding: 13px 25px 12px;
-      border: 1px solid $govuk-border-colour;
-      border-radius: 0;
-      color: $govuk-text-colour;
-      -webkit-box-shadow: 0 2px 0 $govuk-border-colour;
-      box-shadow: 0 2px 0 $govuk-border-colour;
-      text-align: center;
-      vertical-align: top;
-      cursor: pointer;
-    }
+  //   button {
+  //     font-size: 19px;
+  //     box-sizing: border-box;
+  //     display: inline-block;
+  //     position: relative;
+  //     margin-top: 0;
+  //     margin-bottom: 8px;
+  //     padding: 13px 25px 12px;
+  //     border: 1px solid $govuk-border-colour;
+  //     border-radius: 0;
+  //     color: $govuk-text-colour;
+  //     -webkit-box-shadow: 0 2px 0 $govuk-border-colour;
+  //     box-shadow: 0 2px 0 $govuk-border-colour;
+  //     text-align: center;
+  //     vertical-align: top;
+  //     cursor: pointer;
+  //   }
 
-    button:hover:not(:focus){
-      color: inherit;
-      background-color: govuk-colour("light-grey");
-    }
+  //   button:hover:not(:focus){
+  //     color: inherit;
+  //     background-color: govuk-colour("light-grey");
+  //   }
 
-    button:focus {
-      outline: 3px solid transparent;
-      color: #0b0c0c;
-      background-color: #ffdd00;
-      box-shadow: 0 0px #ffdd00, 0 2px #0b0c0c; 
-      border: 1px solid transparent;
-    }
-  }
+  //   button:focus {
+  //     outline: 3px solid transparent;
+  //     color: #0b0c0c;
+  //     background-color: #ffdd00;
+  //     box-shadow: 0 0px #ffdd00, 0 2px #0b0c0c; 
+  //     border: 1px solid transparent;
+  //   }
+  // }
 
   .accordion-changes {
 
