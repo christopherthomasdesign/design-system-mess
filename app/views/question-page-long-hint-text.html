@@ -1,0 +1,59 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a href="#" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Tell us about the difficulties with washing and bathing and how you manage them
+      </h1>
+
+      <p>
+        For each difficulty, tell us:
+      </p>
+
+      <ul class="govuk-list govuk-list-bullet">
+        <li>how often you have this difficulty – tell us about both good and bad days</li>
+        <li>what the difficulty is</li>
+        <li>why you have it, or how it relates to your condition</li>
+        <li>any aids or adaptions you use, or help you get from another person</li>
+        <li>any help you feel you need but do not get</li>
+      </ul>
+
+      <div class="govuk-inset-text">
+        <h2 class="govuk-heading-m">
+          Examples
+        </h2>
+        <p>
+          "For about three months of the year, I cannot motivate myself to bathe because I feel too depressed. My parents prompt me for several minutes every day to go and shower when I cannot motivate myself."
+        </p>
+        <p>
+          About five days a week, I have difficulty washing my lower body because my back is too stiff and painful. I use a shower seat so that I can rest my back when I shower"
+        </p>
+      </div>
+
+      <form action="/form-handler" method="post" novalidate>
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-visually-hidden" for="washing-bathing-difficulties">
+            Tell us about the difficulties with washing and bathing and how you manage them
+          </label>
+          <textarea class="govuk-textarea" id="washing-bathing-difficulties" name="washing-bathing-difficulties" rows="8" aria-describedby="more-detail-hint"></textarea>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </form>
+
+    </div>
+</div>
+
+{% endblock %}
