@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <ol class="app-task-list app-task-list-2">
+        <li>
+          <h2 class="app-task-list__section">
+            Check before you start
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="eligibility-completed">
+                  Check eligibility
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">Completed</span>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="read-declaration-completed">
+                  Read declaration
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">Completed</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="app-task-list__section">
+            Prepare application
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="company-information-completed">
+                  Company information
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">Completed</span>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="contact-details-completed">
+                  Your contact details
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">In progress</span>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#">
+                  List convictions
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">In progress</span>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#">
+                  Provide financial evidence
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">Not yet started</span>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#" aria-describedby="medical-information-completed">
+                  Give medical information
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">Completed</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <h2 class="app-task-list__section">
+            Apply
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="#">
+                  Submit and pay
+                </a>
+              </span>
+              <span class="app-task-list__tag-1">Not yet started</span>
+            </li>
+          </ul>
+        </li>
+      </ol>
+
+    </div>
+  </div>
+
+{% endblock %}

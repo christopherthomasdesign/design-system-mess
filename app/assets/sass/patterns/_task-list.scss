@@ -29,9 +29,9 @@
   @include govuk-responsive-margin(9, "bottom");
   list-style: none;
   padding-left: 0;
-  @include govuk-media-query($from: tablet) {
-    padding-left: govuk-spacing(6);
-  }
+  // @include govuk-media-query($from: tablet) {
+  //   padding-left: govuk-spacing(6);
+  // }
 }
 
 .app-task-list__item {
@@ -62,4 +62,42 @@
     margin-top: 0;
     margin-bottom: 0;
   }
+}
+
+// 1 Minimum viable tag
+
+.app-task-list__tag-1 {
+  float: right;
+}
+
+// 2 Circles
+
+.app-task-list__task-name-2 {
+  display: inline-block;
+  width: 60%;
+}
+
+.app-task-list__tag-2 {
+  display: inline-block;
+  width: 30%;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    background-color: $govuk-border-colour;
+    height: 20px;
+    width: 20px;
+    border-radius: 20px;
+    margin-right: 0.375em;
+    margin-bottom: -3px;
+  }
+}
+
+.app-task-list__tag-completed:before { background-color: $govuk-success-colour;}
+.app-task-list__tag-progress:before { background-color: govuk-colour("orange");}
+
+.app-task-list__tag-not-started:before { 
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid $govuk-border-colour;
 }
