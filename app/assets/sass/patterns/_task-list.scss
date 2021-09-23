@@ -53,6 +53,7 @@
   }
 }
 
+.app-task-list__tag,
 .app-task-list__task-completed {
   margin-top: govuk-spacing(2);
   margin-bottom: govuk-spacing(1);
@@ -100,4 +101,36 @@
   box-sizing: border-box;
   background-color: transparent;
   border: 1px solid $govuk-border-colour;
+}
+
+// 3 Tags that look less like buttons
+
+.app-task-list-3 {
+
+  .app-task-list__task-name {
+    padding: 2px 0 3px;
+  }
+
+  .app-task-list__tag {
+    background-color: transparent;
+    text-transform: unset;
+    letter-spacing: unset;
+    font-size: 19px;
+    font-weight: normal;
+  }
+
+  .badge-completed {
+    border: 2px solid $govuk-success-colour;
+    color: $govuk-success-colour;
+  }
+
+  .badge-in-progress {
+    border: 2px solid govuk-colour("orange");
+    color: govuk-colour("orange");
+  }
+
+  .badge-not-yet-started {
+    border: 2px solid $govuk-secondary-text-colour;
+    color: $govuk-secondary-text-colour;
+  }
 }
