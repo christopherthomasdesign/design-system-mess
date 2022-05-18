@@ -1,0 +1,66 @@
+.pagination-1 {
+
+  .govuk-pagination__item--current:hover {
+    background-color: govuk-colour("light-grey");
+  }
+
+}
+
+.pagination-2 {
+
+  .govuk-pagination__item--current a {
+    color: $govuk-text-colour;
+  }
+
+  .govuk-pagination__item--current:hover {
+    background-color: govuk-colour("light-grey");
+  }
+
+}
+
+.pagination-3 {
+
+  .govuk-pagination__item--current {
+    background-color: $govuk-link-colour;
+
+    a {
+      color: govuk-colour("white");
+    }
+
+    a:not(:hover) {
+      text-decoration: none;
+    }
+
+  }
+
+  .govuk-pagination__item--current:hover {
+    background-color: govuk-colour("light-grey");
+
+    a {
+      color: $govuk-link-hover-colour;
+    }
+  }
+
+}
+
+.pagination-4 {
+
+  .govuk-pagination__item--current {
+    border-bottom: 4px solid $govuk-link-colour;
+
+    a:not(:hover) { 
+      text-decoration: none;
+    }
+
+  }
+
+  .govuk-pagination__item--current:hover {
+    background-color: govuk-colour("light-grey");
+    border-bottom: 4px solid $govuk-link-hover-colour;
+
+    a {
+      color: $govuk-link-hover-colour;
+    }
+  }
+
+}
